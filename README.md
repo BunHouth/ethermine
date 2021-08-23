@@ -38,7 +38,7 @@ WantedBy=default.target
 ```
 __Available command__
 ```bash
-sudo systemctl enable mining.service
+sudo systemctl enable $PWD/mining.service
 sudo systemctl disable mining.service
 sudo systemctl status mining.service
 sudo systemctl start mining.service
