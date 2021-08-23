@@ -1,0 +1,10 @@
+[Unit]
+After=network.service
+
+[Service]
+ExecStart=/bin/bash /home/go/workspaces/ethermine/mining.sh
+StandardOutput=append:/home/go/workspaces/ethermine/logs/mining.log
+StandardError=append:/home/go/workspaces/ethermine/logs/mining.error.log
+
+[Install]
+WantedBy=default.target

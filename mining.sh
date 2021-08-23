@@ -1,0 +1,1 @@
+/home/go/workspaces/ethermine/./nsfminer -U -P stratum1+ssl://0xc7827380Db0ee605797c1D44F91977207d24bC93@asia1.ethermine.org:5555
