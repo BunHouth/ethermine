@@ -29,9 +29,12 @@ __Add content below to mining.service__
 After=network.service
 
 [Service]
+Type=simple
 ExecStart=<path>/mining.sh
 StandardOutput=append:<path>/logs/mining.log
 StandardError=append:<path>/logs/mining.error.log
+Restart=always
+RestartSec=1
 
 [Install]
 WantedBy=default.target
